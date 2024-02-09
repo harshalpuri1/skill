@@ -161,8 +161,70 @@ console.log("Congratulations! You Entered the right no:", gameno);
 
 
 
+// function star(rows) {
+//     for (let i = 1; i <= rows; i++) {
+//       let stars = "";
+//       for (let j = 1; j <= i; j++) {
+//         stars += "*";
+//       }
+//       console.log(stars);
+//     }
+//   }
+  
+//   const rows = 5;
+//   star(rows);
+  
+
+function star(pattern){
+  for(let i=1; i<=pattern; i++){
+      let stars = "";
+      for (let j=1; j<=i; j++){
+          stars += "*";
+
+      }
+      console.log(stars);
+
+  }
+}
+const pattern = 5;
+star (pattern);
 
 
 
 
 
+// function star(rows) {
+//     for (let i = 1; i <= rows; i++) {
+//       let stars = "";
+//       for (let j = 1; j <= i; j++) {
+//         stars += "*";
+//       }
+//       console.log(stars);
+//     }
+//   }
+  
+//   const rows = 5;
+//   star(rows);
+  
+
+   
+    // for(let i=1; i<=10; i++){
+    //     let stars = "";
+    //     for (let j=1; j<=i; j++){
+    //         stars += "*";
+
+    //     }
+    //     console.log(stars);
+
+    // }
+
+
+
+    for (let i=1; i<=5; i++){
+      let star = "";
+  
+      for (let j=1; j<=i; j++){
+          star += "*";
+      }
+      console.log(star);
+  }
