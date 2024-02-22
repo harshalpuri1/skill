@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+
+        /* div{
+            width: 200px;
+            height: 500px;
+            text-align: center;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        .main1{
+            /* display: inline; */
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .main2{
+            display: flex;
+            border: 2px solid red;
+            flex-direction: column-reverse;
+            /* justify-content: center; */
+            /* align-items: center; */
+            height: 900px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Display Flex in CSS</h1>
+
+    <div>This is <span style="color: red;">div</span></div>
+
+    <div class="main1">
+        <h3>This is Main1</h3>
+        <div class="div1">This is div 1</div>
+        <div class="div2">This is div 2</div>
+        <p class="div3">This is div 3</p>
+        <div class="div4">This is div 4</div>
+        <div class="div5">This is div 5</div>
+    </div>
+<br><br>
+
+    <div class="main2">
+        <h3>This is main2</h3><br>
+        <span class="span1">1 This is span</span>
+        <span class="span2">2 This is span</span>
+        <span class="span3">3 This is span</span>
+        <span class="span4">4 This is span</span>
+        <span class="span5">5 This is span</span>
+    </div>
+
+</body>
+</html>
