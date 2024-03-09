@@ -3,47 +3,15 @@
 }
 
 .container{
+    background: darkblue;
     height: 600px;
     width: 600px;
-    background: darkblue;
 
 }
 
 .child{
+    background: red;
     height: 100px;
     width: 100px;
-    background: red;
-    /* transition: 1s ease-in-out; */
-    transition:all 2s ease-in;
-    /* transition: all 1s ease-out; */
-}
-
-.container:hover > .child{
-    transform: translateX(500%) translateY(500%) translateZ(200px);
-    background-color: yellow;
-    /* translate: 10px 10px 60px; */
-}
-
-.wrapper {
-  perspective: 100px;
-  display: inline-flex;
-  gap: 1em;
-}
-.wrapper > div {
-  width: 7em;
-  line-height: 7em;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-  border: 3px dotted;
-}
-#box1:hover {
-  translate: 20px;
-}
-
-#box2:hover {
-  translate: 20px 20px;
-}
-
-#box3:hover {
-  translate: 5px 5px 30px;
+    
 }

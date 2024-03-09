@@ -211,11 +211,22 @@ star (pattern);
 
 
 
-    for (let i=1; i<=5; i++){
-      let star = "";
+  //   for (let i=1; i<=5; i++){
+  //     let star = "";
   
-      for (let j=1; j<=i; j++){
-          star += "*";
-      }
-      console.log(star);
+  //     for (let j=1; j<=i; j++){
+  //         star += "*";
+  //     }
+  //     console.log(star);
+  // }
+
+
+  var size =5;
+  a = 5;
+  var size = 4;
+  for(let i= size; i>=0; i--){
+    console.log(a);
+    a=a-2;
   }
+
+  
