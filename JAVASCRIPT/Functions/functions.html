@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <p id="show"></p>
+    <p id="add"></p>
+    <p id="name"></p>
+    <p id="sub"></p>
+    <p id="coffee"></p>
+
+    <script>
+        //There are two types of functions 
+        /*
+        1) Non-Parameterized Functions
+        */
+        function show(){ //Function Declaration
+            document.getElementById('show').innerHTML='Harshal'
+        }
+        //Function call
+        show();
+
+
+
+
+
+        // 2) parameterized Functions
+        function add(a,b){
+            document.getElementById('add').innerHTML=a+b
+        }
+        add(88,22);
+
+
+        // 👇 Arrow Functions
+        //anonymous functions             without function name
+        const num=()=>{
+            document.getElementById('name').innerHTML='Harshal'
+        }
+        num();
+
+
+
+
+        //
+        const display=(a,b)=>{
+            document.getElementById('sub').innerHTML=a-b
+        }
+        display(99, 9);
+
+
+
+
+        function coffeename(name, size){
+            return `The ${name} coffee of ${size} size is ready.`; //
+        }
+        
+        document.getElementById('coffee').innerHTML=coffeename('Latte' , 'Medium');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

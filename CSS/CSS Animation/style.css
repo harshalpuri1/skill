@@ -13,22 +13,33 @@
     background: red;
     height: 100px;
     width: 100px;
+    animation: round 2s forwards infinite; 
     
 }
 
-.container:hover >.child {
+.container:hover >.child {  
     /* transform: translateX(250%) translateY(250%); */
-    animation: round 2s ease-in 2;
-    animation-direction: alternate;
+    /* animation: round 2s forwards infinite; here the last value is for iteration count */
+    /* animation-direction: alternate; */
+    animation-play-state: paused;
 }
 
-@keyframes round {
+@keyframes round { /*states in the animation*/
     0% {
         transform: translateX(0%);
     }
-
+    25%{
+        transform: translateX(500%);
+    }
+    50%{
+        transform: translateX( 500%) translateY(500%);
+    }    
+    75%{
+        transform: translateX( 0%) translateY(500%);
+    }
     100%{
-        transform: translateX(500%) translateY(500%);
+        transform: translateX( 0%) translateY(0%);
+
     }
     
 }
