@@ -10,7 +10,7 @@
 let students = [{
     name: "Harshal",
     marks: 99,
-}, {
+}, {  
     name: "Jay",
     marks: 95,
 }, {
