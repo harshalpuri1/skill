@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript </title>
+</head>
+<body>
+    <h1>Events in Javascript</h1>
+    <p id="event_demo"></p>
+    <button id="botton" onclick="showContent()">onclick Events</button>
+
+    <script>
+        const event_demo=document.getElementById("event_demo");
+
+        function showContent(){
+            event_demo.innerHTML= 'Paragraph Content';
+        }
+    </script>
+</body>
+</html>
