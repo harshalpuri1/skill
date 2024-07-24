@@ -1,0 +1,22 @@
+:root{
+    --backgroundcolour:#111;
+    --textcolour:#fff;
+    --gridfont:sans-serif;
+
+}
+
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: var(--backgroundcolour);
+    color: var(--textcolour);
+    font-family: var(--gridfont);
+
+}
+
+.grid-item{
+    background-color: darkcyan;
+    padding: 20px 15px;
+    border: solid 1px var(--textcolour);
+}

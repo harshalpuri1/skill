@@ -1,0 +1,13 @@
+.child{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin:0 auto;
+  margin-top: 10px;
+ transition: 1s;
+}
+
+.child:hover{
+  background-color: red;
+  border-radius: 50%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Alert in Javascript</h1>
+
+    <p id="detail">
+
+    </p>
+
+    <script>
+        // alert('Hello');
+        // window,alert('Half Time is passed');
+        // console.log(window);
+        
+
+        // if(confirm("Press Buttoon To Cancel or Ok")){
+        //     document.getElementById('detail').innerHTML='You Pressed Ok'
+        // }
+
+        // else{
+        //     document.getElementById('detail').innerHTML='You Pressed Cancel'
+        // }
+
+        // prompt("Enter Your Name");
+
+        let a=prompt("Enter Your Character Name","");
+            if(a){
+                document.getElementById('detail').innerHTML='Your Character Name is '+a + ' Welcome to the new world'
+            }
+            else{
+                document.getElementById('detail').innerHTML='Please refresh the site and enter the character name!'
+            }
+    </script>
+</body>
+</html>

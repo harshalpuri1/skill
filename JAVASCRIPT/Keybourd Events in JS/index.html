@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeysEvents</title>
+</head>
+
+<body>
+
+    <div id="form"></div>
+
+    <h2>Events in Javascript</h2>
+
+    <p>onKeyDown</p>
+    <input type="text" id="down">
+
+    <p>onKeyUp</p>
+    <input type="text" id="up">
+
+    <p>onKeyPress</p>
+    <input type="text" id="press">
+
+
+    <script>
+        let keyevent1 = document.getElementById('down');
+        keyevent1.addEventListener('keydown',function show (){
+            alert(this.value);
+        } );
+                let keyevent2 = document.getElementById('up');
+        keyevent1.addEventListener('keyup',function show (){
+            alert(this.value);
+        } );
+              let keyevent3 = document.getElementById('press');
+        keyevent1.addEventListener('keypress',function show (){
+            alert(this.value);
+        } );
+    </script>
+
+</body>
+
+</html>

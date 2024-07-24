@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Driven Function</title>
+</head>
+<body onresize = "document.body.style.backgroundColor= 'blue' ">
+
+    <input type="text" id="OnKeyPress" placeholder="Keypressed">
+    
+    <button onclick="document.getElementById('time').innerHTML=Date()">
+        Show Time
+    </button>
+    <div onmouseover="document.body.style.backgroundColor='red' " onmouseout="document.body.style.backgroundColor='white'" id="time"></div>
+
+
+    <div id="color">harry potter</div>
+
+    <script>
+        // document.getElementById('color').onmousemove = function(){
+        // document.body.style.color='blue';
+        // alert("Event Occured");
+        // };
+
+        // document.body.onresize = document.body.style.backgroundColor ='blue';
+
+
+        document.getElementById('OnKeyPress').onkeypress = function(){
+            document.getElementById('time').innerHTML="This is OnKeyPress Event"
+        };
+
+
+        document.getElementById('OnKeyPress').onkeyup = function(){
+            document.getElementById('time').innerHTML="This is OnKeyUp Event"
+        };
+
+        document.getElementById('OnKeyPress').onkeydown = function(){
+            document.getElementById('time').innerHTML="This is OnKeyDown Event"
+        };  
+
+        document.body.onload = function () {
+            alert("Your Document is Loaded...");
+        };
+
+        document.body.onunload = function () {
+            alert("Your Document is Unloaded...");
+        };
+        
+
+    </script>
+
+</body>
+</html>

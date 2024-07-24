@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement 1: Keyframes</title>
+
+    <style>
+        .container{
+            height: 600px;
+            width: 600px;
+            background-color: gray;
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: change 4s ease infinite alternate;
+        }
+        @keyframes change{
+            0% {
+                transform: translateX(0%);
+            }
+            50%{
+                background-color: yellow;
+            }
+            100%{
+                transform: translate(500%);
+            }
+        }
+    </style>
+</head>
+<body>
+   <h4>
+    Create a box, whose background color changes slowly from color to other color and when ananimation is finished, it goes back to its original original.
+   </h4> 
+   
+   <div class="container">
+    <div class="child"></div>
+   </div>
+
+</body>
+</html>

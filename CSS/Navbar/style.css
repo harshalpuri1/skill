@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 5px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+nav > .logo > h1{
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+nav > .menu {
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav > .menu > a{
+    margin-right: 15px;
+    color: #111;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 600;
+
+
+    
+}
+
+nav > .menu > a:hover{
+    opacity: 0.9;
+    color: darkgray;
+    transition: 0.3s;
+    
+}

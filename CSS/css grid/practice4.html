@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Code 4</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .container{
+            height: 400px;
+            width: 600px;
+            background-color: antiquewhite;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+            "header overlay"
+            "sidebar overlay";
+
+        }
+        .items{
+            color: white;
+        }
+
+        #item1{
+            grid-area: header;
+            background-color: gray;
+            border-radius: 10px 0px 0px 10px;
+            grid-column: 1/span 2;
+        }
+        #item2{
+            grid-area: sidebar;
+            background-color: black;
+            border-radius: 10px;
+            grid-gap: 10px;
+            
+        }
+        #item3{
+            grid-area: overlay;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">Header</div>
+        <div class="items" id="item2">Sidebar</div>
+        <div class="items" id="item3">Overlay</div>
+    </div>
+</body>
+</html>

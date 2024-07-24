@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ok">Alert in JavaScript</p>
+    <p id="sum">Sum</p>    
+
+
+
+
+
+
+
+
+    <script>
+        // window.alert('Half Time is Passed ');
+
+        // console.log(window);
+
+        // confirm("Press OK to Confirm");
+        if(confirm("Press Button to Cancel or Ok")){
+            document.getElementById('ok').innerHTML='You Pressed OK'
+        }
+        else{
+            document.getElementById('ok').innerHTML='You Pressed Cancel'
+        }
+
+        num1 = 6;
+        num2 = 4;
+
+        document.getElementById('sum').innerHTML=num1+num2
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Code 3</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+
+        .container{
+            height: 400px;
+            width: 600px;
+            background-color: aqua;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas:
+            "....... header"
+            "sidebar content";
+        }
+
+        .items{
+            background-color: gray;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #item1{
+            grid-area: header;
+            /* grid-column: 2/4; */
+            /* align-items: center;
+            justify-content: center; */
+        }
+        #item2{
+            grid-area: sidebar;
+            background-color: rgb(71, 69, 69)
+        }
+
+        #item3{
+            grid-area: content;
+            background-color: rgb(71, 69, 69);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">Header</div>
+        <div class="items" id="item2">Sidebar</div>
+        <div class="items" id="item3">Content</div>
+    </div>
+</body>
+</html>
